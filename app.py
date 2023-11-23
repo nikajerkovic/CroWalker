@@ -14,6 +14,8 @@ with open(image_path, "rb") as img_file:
 # Instead of dash.Dash, use JupyterDash
 # Instead of JupyterDash, use the standard Dash
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+
+app.layout = html.Div("Default Layout")
 server = app.server
 
 

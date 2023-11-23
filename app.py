@@ -15,7 +15,6 @@ with open(image_path, "rb") as img_file:
 # Instead of JupyterDash, use the standard Dash
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
-app.layout = html.Div("Default Layout")
 server = app.server
 
 
@@ -90,7 +89,8 @@ app.layout = dbc.Container(
                 dbc.Row(dbc.Col(html.Div(id='container-button-basic'), width=12))
             ],
             className="form-results-container"
-        )
+        ),
+        html.Div(id='container-button-basic')
     ],
     fluid=True,
     className="main-container"

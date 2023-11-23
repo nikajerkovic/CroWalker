@@ -1,0 +1,189 @@
+/* Main container styling */
+.main-container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 19rem;
+  padding-right: 19rem;
+  background-color: rgba(237, 237, 233, 0.2);
+  font-family: "Quicksand", sans-serif;
+}
+
+/* Title container styling */
+.title-container .title {
+  display: flex;
+  align-items: center;
+  font-family: "Quicksand", sans-serif; /* Use the font-family name from Google Fonts */
+  font-size: 2.25rem; /* Adjust the font size as needed */
+  font-weight: bold;
+  color: #333; /* Adjust the color as needed */
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.logo {
+  max-width: 150px; /* Adjust the maximum width as needed */
+  height: auto; /* Maintain the aspect ratio */
+  display: block; /* Ensure proper spacing around the image */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Description container styling */
+.description-container .description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-align: justify;
+  font-family: "Quicksand", sans-serif;
+}
+
+/* Form and results container styling */
+.form-results-container {
+  background-color: rgb(255, 255, 255); /* bila je bijela*/
+  padding: 1.5rem 3.25rem 1.5rem 3.25rem;
+  border-radius: 0.2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom border colors for input fields */
+.input-glabella {
+  border-color: #156ea6;
+  border-width: 2px;
+}
+.input-glabella:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 0.2rem rgba(21, 110, 166, 0.25) !important; /* Light red glow */
+  border-color: #156ea6 !important; /* Red color for Glabella */
+  border-width: 3px !important; /* Thicker border */
+}
+
+.input-supraorbital {
+  border-color: #ffc71a;
+  border-width: 2px;
+}
+.input-supraorbital:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 199, 26, 0.25) !important;
+  border-color: #ffc71a !important;
+  border-width: 3px !important;
+}
+
+.input-mastoid {
+  border-color: #e75011;
+  border-width: 2px;
+}
+.input-mastoid:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 0.2rem rgba(231, 80, 17, 0.25) !important; /* Light blue glow */
+  border-color: #e75011 !important; /* Blue color for Mastoid Process */
+  border-width: 3px !important;
+}
+
+.input-nuchal {
+  border-color: #3db5ff;
+  border-width: 2px;
+}
+.input-nuchal:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 0.2rem rgba(61, 181, 255, 0.25) !important; /* Light yellow glow */
+  border-color: #3db5ff !important; /* Yellow color for Nuchal Crest */
+  border-width: 3px !important;
+}
+
+/* Style for form inputs */
+.form-control {
+  margin-top: 10px;
+}
+
+/* Style for the submit button */
+.custom-submit-btn {
+  padding: 0.4rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  background: #012147;
+  border: none;
+  color: white;
+  font-weight: 530;
+  transition: transform 0.1s ease-in-out;
+}
+
+.custom-submit-btn:hover {
+  transform: scale(1.01);
+  background: #1a3557;
+}
+
+.custom-submit-btn:active {
+  background-color: #1a3557 !important;
+}
+
+/* Row styling for the submit button to center it */
+.submit-button-row {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Styles for the results table */
+.results-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.results-table th,
+.results-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.results-table th {
+  background-color: #f2f2f2;
+}
+
+/* Styles for feature labels in the table */
+.label-cell .feature-label {
+  display: inline-block;
+  padding: 0px 8px; /* Adjust padding as needed */
+  margin-right: 8px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 12px; /* Adjust font size as needed */
+  text-align: center;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  border: 1px solid transparent;
+}
+
+/* Additional specific styles for each feature label */
+.label-glabella,
+.label-supraorbital-edge,
+.label-mastoid-process,
+.label-nuchal-crest {
+  display: inline-block;
+  padding: 5px 8px; /* Adjust padding as needed */
+  margin-right: 8px;
+  margin-bottom: 3px;
+  margin-top: 3px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 12px; /* Adjust font size as needed */
+  text-align: center;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  border: 1px solid transparent;
+}
+/* Additional specific styles for each feature label */
+.label-glabella {
+  background-color: #156ea6;
+}
+
+.label-supraorbital-edge {
+  background-color: #ffc71a;
+}
+
+.label-mastoid-process {
+  background-color: #e75011;
+}
+
+.label-nuchal-crest {
+  background-color: #3db5ff;
+}
